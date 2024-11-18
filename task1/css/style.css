@@ -5,7 +5,6 @@ body {
     padding: 0;
     box-sizing: border-box;
     background: linear-gradient(135deg, #2c3e50, #34495e);
-    /* Darker, more refined gradient */
     color: #fff;
 }
 
@@ -14,7 +13,6 @@ body {
 
 header {
     background: linear-gradient(to right, #f39c12, #e74c3c);
-    /* Warm gradient header with orange to red tones */
     color: #fff;
     padding: 1.5rem 0;
     position: sticky;
@@ -40,7 +38,6 @@ nav {
     margin: 0;
     display: flex;
     justify-content: left;
-    /* Align items to the left */
     gap: 1.5rem;
     transition: all 0.3s ease;
 }
@@ -89,7 +86,6 @@ nav {
         top: 0;
         left: -200px;
         background: #2c3e50;
-        /* Dark background for better contrast */
         height: 100vh;
         width: 250px;
         display: flex;
@@ -102,14 +98,12 @@ nav {
 
     .navbar.active {
         left: 0;
-        /* Slide the navbar in */
     }
 
     .navbar a {
         display: block;
         padding: 1rem;
         width: 100%;
-        /* Full width for better visibility */
         text-align: left;
         color: #fff;
         border: none;
@@ -119,7 +113,6 @@ nav {
 
     .navbar a:hover {
         background: #e74c3c;
-        /* Red hover effect for links */
         color: #fff;
     }
 
@@ -135,7 +128,7 @@ nav {
 #about {
     background: linear-gradient(135deg, #2c3e50, #34495e);
     color: #fff;
-    padding: 3rem 1rem; /* Padding around content */
+    padding: 3rem 1rem; 
 }
 
 .about-container {
@@ -147,9 +140,9 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
-    border-radius: 15px; /* Rounded corners for the container */
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background for modern look */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    border-radius: 15px; 
+    background: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
 }
 
 .about-img {
@@ -157,12 +150,12 @@ nav {
     height: 220px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow around image */
-    transition: transform 0.3s ease; /* Smooth transform on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease; 
 }
 
 .about-img:hover {
-    transform: scale(1.1); /* Slight zoom-in effect on hover */
+    transform: scale(1.1); 
 }
 
 .about-content {
@@ -170,9 +163,9 @@ nav {
     text-align: left;
     color: #fff;
     padding: 1rem;
-    border-radius: 10px; /* Rounded corners for text box */
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for text */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Shadow effect around text */
+    border-radius: 10px; 
+    background: rgba(0, 0, 0, 0.6); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
     transition: all 0.3s ease;
 }
 
@@ -185,15 +178,15 @@ nav {
 .about-content p {
     font-size: 1.2rem;
     line-height: 1.8;
-    transition: color 0.3s ease; /* Smooth text color transition */
+    transition: color 0.3s ease; 
 }
 
 .about-content:hover {
-    background: rgba(0, 0, 0, 0.8); /* Darker background when hovering over text */
+    background: rgba(0, 0, 0, 0.8); 
 }
 
 .about-content p:hover {
-    color: #f39c12; /* Highlight text color on hover */
+    color: #f39c12; 
 }
 
 /* Typing effect */
@@ -215,10 +208,10 @@ nav {
 }
 
 #about h2::after {
-    content: '|'; /* Cursor */
+    content: '|'; 
     position: absolute;
     right: 0;
-    animation: blink-caret 0.75s step-end infinite; /* Blinking cursor */
+    animation: blink-caret 0.75s step-end infinite; 
 }
 
 /* Blink effect for cursor */
@@ -302,7 +295,7 @@ nav {
 }
 
 .skill-item {
-    flex: 1 1 calc(33.33% - 30px); /* Adjust item width to fit 3 items per row */
+    flex: 1 1 calc(33.33% - 30px); 
     background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
     padding: 20px;
@@ -330,9 +323,9 @@ nav {
 }
 
 .skills-container .skill-item:last-child {
-    flex: 0 1 100%; /* Make it take full width */
-    text-align: center; /* Center text */
-    margin: 0 auto; /* Center the item itself */
+    flex: 0 1 100%; 
+    text-align: center; 
+    margin: 0 auto; 
 }
 
 /* Responsive Design */
@@ -355,26 +348,26 @@ nav {
 
 /* Projects Section */
 #projects {
-    padding: 100px 20px 50px; /* Added padding to ensure content doesn't overlap with navbar */
-    background: linear-gradient(135deg, #2c3e50, #34495e); /* Matching background with the rest of the page */
+    padding: 100px 20px 50px; 
+    background: linear-gradient(135deg, #2c3e50, #34495e); 
     color: #fff;
     position: relative;
-    z-index: 0; /* Ensure it stays below the navbar */
+    z-index: 0; 
 }
 
 /* Adjusted padding for smaller screens */
 @media (max-width: 768px) {
     #projects {
-        padding: 150px 20px 50px; /* More padding to accommodate mobile navbar */
+        padding: 150px 20px 50px; 
     }
 }
 
 /* Projects Title */
 .projects-container h2 {
     font-size: 2.5rem;
-    color: #f39c12; /* Title color */
+    color: #f39c12; 
     margin-bottom: 40px;
-    text-align: center; /* Centering the title */
+    text-align: center; 
     padding-bottom: 10px;
     border-bottom: 3px solid #e74c3c;
 }
@@ -383,14 +376,14 @@ nav {
 /* Projects Grid */
 .projects-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 30px;
     padding: 20px;
 }
 
 /* Individual Project Item */
 .project-item {
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    background: rgba(255, 255, 255, 0.1); 
     color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -464,13 +457,13 @@ nav {
 /* Responsive Design for Projects Section */
 @media (max-width: 1024px) {
     .projects-list {
-        grid-template-columns: repeat(2, 1fr); /* 2 items per row for tablets */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
 @media (max-width: 768px) {
     .projects-list {
-        grid-template-columns: 1fr; /* 1 item per row for mobile devices */
+        grid-template-columns: 1fr; 
     }
 
     .project-item {
@@ -480,11 +473,11 @@ nav {
 
 @media (max-width: 768px) {
     #projects {
-        padding: 150px 20px 50px; /* Extra padding to accommodate navbar height */
+        padding: 150px 20px 50px; 
     }
 
     .upcoming-projects {
-        margin-top: 20px; /* Adjust spacing for smaller screens */
+        margin-top: 20px; 
     }
 }
 
@@ -495,15 +488,15 @@ nav {
     background: linear-gradient(135deg, #2c3e50, #34495e);
     color: #fff;
     position: relative;
-    padding-top: 120px; /* Ensure no overlap with navbar */
-    margin-top: 100px; /* Add space to top to prevent any issues with navbar */
+    padding-top: 120px; 
+    margin-top: 100px; 
 }
 
 /* Resume container */
 .resume-container {
     max-width: 800px;
     margin: 0 auto;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    background: rgba(0, 0, 0, 0.5); 
     padding: 40px;
     border-radius: 10px;
     text-align: center;
@@ -573,7 +566,8 @@ nav {
 /* Media Query for small screens */
 @media (max-width: 768px) {
     #resume {
-        padding-top: 150px; /* Ensure no overlap with navbar on small screens */
+        padding-left: 40px;
+        padding-top: 150px; 
         margin-top: 60px;
     }
 
@@ -599,14 +593,14 @@ nav {
 /* Contact Section Styles */
 #contact {
     background: linear-gradient(135deg, #2c3e50, #34495e); /* Matches the overall theme */
-    padding: 3rem 1rem; /* Compact padding */
+    padding: 3rem 1rem; 
     color: #fff;
     text-align: center;
 }
 
 #contact h2 {
     font-size: 2.5rem;
-    margin-bottom: 1.5rem; /* Adjusted spacing */
+    margin-bottom: 1.5rem; 
     text-align: center;
 }
 
@@ -614,25 +608,25 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem; /* Reduced spacing between items */
+    gap: 1.5rem; 
     max-width: 600px;
     margin: 0 auto;
     padding: 2rem;
-    background: rgba(0, 0, 0, 0.6); /* Slightly transparent box */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    background: rgba(0, 0, 0, 0.6); 
+    border-radius: 10px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
 }
 
 .contact-item {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 1rem; /* Reduced gap between icon and text */
+    gap: 1rem; 
     font-size: 1.2rem;
 }
 
 .contact-item i {
-    font-size: 1.5rem; /* Slightly larger icon size */
+    font-size: 1.5rem; 
     color: #e74c3c;
 }
 
@@ -648,7 +642,7 @@ nav {
 
     .contact-item {
         flex-direction: column;
-        text-align: center; /* Align text for smaller screens */
+        text-align: center; 
         gap: 0.5rem;
     }
 }
@@ -656,9 +650,9 @@ nav {
 
 /* Footer Styles */
 #footer {
-    background: linear-gradient(135deg, #1a242f, #2c3e50); /* Dark gradient for a modern look */
+    background: linear-gradient(135deg, #1a242f, #2c3e50); 
     color: #fff;
-    padding: 2rem 0; /* Slightly more padding for better spacing */
+    padding: 2rem 0; 
     font-size: 0.9rem;
     position: relative;
 }
@@ -675,9 +669,9 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem; /* Space between social icons and text */
+    gap: 1rem; 
     padding-bottom: 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle separator */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
 }
 
 .footer-top p {
@@ -694,14 +688,14 @@ nav {
 }
 
 .footer-social a:hover {
-    color: #f39c12; /* Highlight color on hover */
-    transform: scale(1.2); /* Slight pop effect */
+    color: #f39c12; 
+    transform: scale(1.2); 
 }
 
 .footer-links {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Wrap links on small screens */
+    flex-wrap: wrap; 
     gap: 1rem;
     margin-top: 1rem;
 }
@@ -717,9 +711,9 @@ nav {
 }
 
 .footer-links a:hover {
-    background-color: #f39c12; /* Highlight background on hover */
-    color: #1a242f; /* Dark text for contrast */
-    border-color: #f39c12; /* Matching border */
+    background-color: #f39c12; 
+    color: #1a242f; 
+    border-color: #f39c12; 
 }
 
 /* Responsive Design */
